@@ -20,5 +20,5 @@
 6. JavaScript.
 
 **Ссылка на проект:**
-[Место]()
+[Место](https://onesoul92.github.io/mesto/index.html)
 
