@@ -8,7 +8,7 @@
     width: 32px;
     height: 32px;
     border: none;
-    outline: none; 
+    outline: none;
     position: absolute;
     right: -40px;
     top: -40px;
@@ -22,7 +22,7 @@
 @media screen and (max-width: 568px) {
     .popup__close-button {
         width: 20px;
-        height: 20px; 
+        height: 20px;
         right: 0;
     }
 }
