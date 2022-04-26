@@ -1,0 +1,14 @@
+.header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #545454;
+} 
+
+@media screen and (max-width: 568px) {
+    .header {
+      max-width: 320px;
+    }
+}
