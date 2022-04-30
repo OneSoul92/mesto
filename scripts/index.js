@@ -17,11 +17,11 @@ let profileInfo = document.querySelector('.profile__subtitle');
 
 function togglePopup() {
     if (popup.classList.contains('popup__opened')){
-        popup.classList.toggle('popup__opened')
+        popup.classList.remove('popup__opened')
     } else {
+        popup.classList.add('popup__opened');
         nameInput.value = profileName.textContent;
         occupationInput.value = profileInfo.textContent;
-        popup.classList.toggle('popup__opened');
     }
 };
 
