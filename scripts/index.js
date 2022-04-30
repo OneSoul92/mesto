@@ -9,18 +9,28 @@ let occupationInput = document.querySelector('.popup__input-info_type_occupation
 let profileName = document.querySelector('.profile__title');  
 let profileInfo = document.querySelector('.profile__subtitle'); 
  
+// function togglePopup() {
+//     popup.classList.toggle('popup__opened');
+//     nameInput.value = profileName.textContent;
+//     occupationInput.value = profileInfo.textContent;
+// }
+
 function togglePopup() {
-    nameInput.value = profileName.textContent;
-    occupationInput.value = profileInfo.textContent;
-    popup.classList.toggle('popup__opened');
-}
+    if (popup.classList.contains('popup__opened')){
+        popup.classList.toggle('popup__opened')
+    } else {
+        nameInput.value = profileName.textContent;
+        occupationInput.value = profileInfo.textContent;
+        popup.classList.toggle('popup__opened');
+    }
+};
 
 function formSubmitHandler(evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileInfo.textContent = occupationInput.value;
     togglePopup();
-}
+};
 
 popupOpenBtn.addEventListener('click', togglePopup);
 popupCloseBtn.addEventListener('click', togglePopup);
